@@ -1,0 +1,12 @@
+                <ul id="gallery">
+                    <li ng-repeat="product in vm.products">
+                        <!-- <a href="#/products/{{product.id}}"> -->
+                        <h1>{{ product.title }}</h1>
+                        <!-- </a> -->
+                        <img ng-src={{vm.url}}{{product.img}}></img>
+                        <p>{{ product.text }}</p>
+                         <button type="button" class="btn btn-primary btn-block" ng-click="vm.open(product.id)">Comments</button>
+
+                    </li>
+                </ul>
+<div ui-view></div>

@@ -1,0 +1,27 @@
+<div class="modal-dialog ">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="container">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <form name="userForm" ng-submit="submitForm()">
+                        <div class="form-group">
+                            <label>Comment</label>
+                            <input type="text" name="comment" class="form-control" ng-model="user.comment">
+                            <span ng-show="errorComment">{{errorComment}}</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="comments">
+                <ul>
+                    <li ng-repeat="comment in comments">
+                        <p>{{ comment.created_by.username }} at {{comment.created_at | date: 'medium' }}</p>
+                        <p><span>Rate: </span>{{ comment.rate }}</p>
+                        <p><span>Comment: </span>{{ comment.text }}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

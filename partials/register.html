@@ -1,0 +1,21 @@
+                <div>
+                  <form name="formUser" novalidate>
+                    username:
+                    <input type="text" name="user" ng-model="vm.user" required>
+                        <span style="color:red" ng-show="formUser.user.$dirty && formUser.user.$invalid"><br>
+                        <span ng-show="formUser.user.$error.required">Username is required.</span>
+                        </span>
+                        <br>
+                    password:
+                    <input type="password" name="password" ng-model="vm.password" required>
+                        <span style="color:red" ng-show="formUser.password.$dirty && formUser.password.$invalid"><br>
+                        <span ng-show="formUser.password.$error.required">Password is required.</span>
+                        <span ng-show="formUser.password.$error.password">Invalid password.</span>
+                        </span>
+                        <br>
+                    <button type="submit" ng-click="vm.submit()" class="btn btn-primary" ng-disabled='formUser.$invalid'>
+                        <small>Registration</small>
+                    </button>
+                  </form>
+                </div>
+<div ui-view></div>

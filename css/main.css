@@ -1,0 +1,188 @@
+/**********************************
+GENERAL
+***********************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 0 7%;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+nav {
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 800px;
+    padding: 15px 10px;
+}
+/**********************************
+FOOTER
+***********************************/
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Changa One', sans-serif;
+    margin: 15px 0;
+    list-style: 0.8em;
+    color: #6ab47b;
+    text-align: center;
+}
+
+/**********************************
+PAGE: ABOUT;
+***********************************/
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+}
+
+#gallery li p {
+    margin: 0;
+    padding: 5%;
+    font-size: 1em;
+    text-align: center;
+}
+
+#gallery li button {
+    padding: 5%;
+    background-color: #6ab47b;
+    border: none;
+}
+
+/**********************************
+PAGE: DETAIL;
+***********************************/
+.comments {
+    position: center;
+    margin-top: 40px;
+}
+
+.comments ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comments ul li {
+    background-color: #fff;
+    box-shadow: 6px 0px 7px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.comments span {
+    color: #6ab47b;
+    font-family: 'Changa One', sans-serif;
+    font-size: 1em;
+}
+
+.container {
+    width: 830px;
+}
+
+.container .col-sm-offset-2 {
+    margin-left: 0px;
+}
+
+.container .col-sm-offset-2 .btn-primary {
+    background-color: #6ab47b;
+    border-color: #6ab47b;
+}
+
+/**********************************
+FORM VALIDATION
+***********************************/
+form {
+    text-align: center;
+}
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+    background-color: #fff;
+    color: #999;
+}
+
+/* green header */
+header {
+    background: #6ab47b;
+    border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+    background: #599a68;
+}
+
+/* nav link */
+nav a, nav a:visited {
+    color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+    color: #32673f;
+    text-decoration: none;
+}
+
